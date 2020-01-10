@@ -1,0 +1,270 @@
+
+* {
+box-sizing: border-box;
+}
+body {
+width: 100%;
+height: auto;
+overflow-x: hidden;
+font-family: 'Open Sans', sans-serif;
+background-color:#3A3A3A;
+}
+
+.exercise{
+margin:3.125rem 6.25rem;
+width:5rem;
+color:#fff;
+}
+.about{
+height:31.25rem;
+text-align:center;
+font-size:24px;
+margin:0.625rem;
+  }
+  table{
+  height:31.25rem;
+  }
+  #bmiheading{
+  text-align: center;
+  }
+  .bg-img{
+  background:no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url("/gym.jpeg");
+  min-height:23.75rem;
+   }
+   .bcg-image{
+  background:no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url("/fitnesz.jpg");
+  min-height:23.75rem;
+   }
+   .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width:300px;
+    position: relative;
+    font-size: 15px;
+    font-weight: bold;
+    
+  }
+  .card {
+  box-shadow: 10px 10px 8px 10px #00000000;
+  }
+ 
+  
+  
+  .card2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width:340px;
+    height:180px;
+    position: relative;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 5px;
+    
+  }
+  
+ .container {
+    padding: 2px 16px;
+  }
+    .error{
+    text-align:center;
+    margin:0.3125rem;
+    height:31.25rem;
+    color:#000000;
+    }
+  h2{
+  text-align:center;
+  font-weight:300;
+  color:#262626;
+  margin:1.25rem 37.5rem;
+  }
+  hr{
+  border-color:#e8eef8;
+  }
+  span{
+  color:#e8eef8;
+  }
+  .profile{
+  border-radius:50%;
+  width:150px;
+  height:150px;
+  margin-left: 20px;
+  
+  }
+  .check{
+  margin:3.125rem 5rem;
+  border-radius:50%;
+  width:80px;
+  position:relative;
+  }
+  input[type='text']{
+  margin:0.625rem 3.125rem;
+  }
+  #collasible-nav-dropdown{
+    color:white;
+  }
+  .bmi{
+    margin: 0 auto;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    width:25rem;
+    height:31.25rem;
+    background:#fff;
+    }
+    .bmi input{
+    width:12.5rem;
+    }
+  .recipe{
+    margin:3.125rem 100px;
+    width:80px;
+    position:relative;
+    margin:3.125rem 6.25rem;
+    border-radius: 50%;
+    color:#fff;
+    }
+    .result{
+    margin:0 auto;
+    text-align: center;
+    height:31.25rem;
+    background:#fff;
+    }
+    #recipe{
+    margin:0.125rem 6.25rem;
+    color:#262626;
+    position:absolute;
+    top:150px;
+    }
+    .recipeform input{
+    width:18.75rem;
+    margin:0.9375rem;
+    border-bottom:2px solid #000000;
+    
+    }
+    .recipeform{
+     margin:0 auto;
+     text-align: center;
+     height:31.25rem;
+    }
+  .recipeform button{
+  background: #000000;
+  color:#fff;
+  margin:0.9375rem;
+  width:6.25rem;
+  border:none;
+  border-radius:1.875rem;
+  }
+    #check{
+    margin:1.25rem 6.25rem;
+    color:#262626;
+    position:absolute;
+    top:7.5rem;
+      }
+    #workout{
+    margin:0.3125rem 5rem;
+    color:#262626;
+    position:absolute;
+    top:8.75rem;
+    left:1.875rem;
+    }
+  .footer{
+  background:#3B4045;
+  height:auto;
+  color:#fff;
+  
+  }
+  #btn{
+  background: #000000;
+  color:#fff;
+  margin:1.5625rem 6.25rem;
+  width:6.25rem;
+  border:none;
+  border-radius:1.875rem;
+  }
+  #footer{
+  margin-top:0.625rem;
+  }
+  hr{
+  border-color:#00000000;
+  }
+  .form{
+    width:31.25rem;
+    height:18.75rem;
+    border:2px solid black;
+    margin:1.25rem 9.375rem;
+    border-radius:1.5625rem;
+   }
+.top-left {
+  position: absolute;
+  top: 9.375rem;
+  left:25rem;
+  color:#fff;
+  }
+.red{
+border:2px solid black;
+margin-top:3.125rem;
+width:50rem;
+height:18.75rem;
+}
+
+ ul {
+ margin: 0;
+ padding: 0;
+}
+    
+li {
+  display: inline-block;
+  margin-left:1.875rem;
+   }
+   .img{
+  width:150%;
+  margin: 0;
+  padding: 0;
+   }
+  
+  .profiles{
+    background-color:#828282;
+    height:380px;
+    color:#fff;
+    }
+  
+   #contact{
+   margin-right:1.5625rem;
+   }
+   .contactform{
+    margin-top:1.25rem ;
+    border-radius:1.5625rem;
+    border: 2px solid #000000;
+    width:25rem;
+    height:31.25rem;
+    background:#fff;
+   }  
+   .contactform h4{
+     text-align: center;
+   } 
+   .contactform input{
+    margin:10px 3.125rem;
+    width:18.75rem;
+      
+   }   
+   .contactform button{
+    background: #000000;
+    color:#fff;
+    margin:1.5625rem 9.375rem;
+    width:6.25rem;
+    border:none;
+    border-radius:1.875rem;
+   }    
+   iframe{
+    margin-top: 1.25rem;
+   }      
+        
+          
