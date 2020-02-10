@@ -25,13 +25,13 @@ render(){
         {this.state.recipes.map((recipe)=>{
         return (
           <div className='result' key={recipe.recipe.calories}>
-          <img src={recipe.recipe.image} alt={recipe.label} width='200px'/>
+           <img src={recipe.recipe.image} alt={recipe.label} width='200px'/>
         <p>Recipe Name:{recipe.recipe.label}</p>
         <p>Recipe source:<a href={recipe.recipe.url}>Recipe Source</a></p>
         </div>
         );
         })}
-   
+           
       </div>
       );
     };
