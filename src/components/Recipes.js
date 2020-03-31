@@ -1,4 +1,4 @@
-import React, {Component } from 'react';
+import React, {Component,Fragment } from 'react';
 import'./Home.css';
 import Form from './Form';
 const App_ID ="1d3f0763";
@@ -19,16 +19,21 @@ class Recipes extends Component{
 
 render(){
       return (
-      <div>
+      <div className ="results">
         
         <Form getRecipe={this.getRecipe}/>
         {this.state.recipes.map((recipe)=>{
         return (
+        
           <div className='result' key={recipe.recipe.calories}>
+             
+    
            <img src={recipe.recipe.image} alt={recipe.label} width='200px'/>
         <p>Recipe Name:{recipe.recipe.label}</p>
-        <p>Recipe source:<a href={recipe.recipe.url}>Recipe Source</a></p>
+        <p>Recipe source:<a href={recipe.recipe.shareAs}>Get Recipe</a></p>
+       
         </div>
+        
         );
         })}
            

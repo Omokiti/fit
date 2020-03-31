@@ -26,6 +26,7 @@ margin:0.625rem;
   }
   #bmiheading{
   text-align: center;
+  margin-top: 20px;
   }
   .bg-img{
   background:no-repeat center center fixed;
@@ -33,7 +34,7 @@ margin:0.625rem;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-image: url("/gym.jpeg");
+  background-image: url("/gym-min.jpeg");
   min-height:23.75rem;
    }
    .bcg-image{
@@ -42,7 +43,7 @@ margin:0.625rem;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-image: url("/fitnesz.jpg");
+  background-image: url("/fitnesz-min.jpg");
   min-height:23.75rem;
    }
    .card {
@@ -113,15 +114,23 @@ margin:0.625rem;
     color:white;
   }
   .bmi{
-    margin: 0 auto;
+    margin: 20px 500px;
     border-radius: 25px;
     border: 2px solid #000000;
     width:25rem;
-    height:31.25rem;
+    height:500px;
     background:#fff;
     }
     .bmi input{
-    width:12.5rem;
+    width:16.5rem;
+    height:40px;
+    margin-left: 2px 50px;
+    border:2px solid #000000;
+    }
+    .bmi label{
+    margin:3px 50px;
+    font-weight:medium;
+    
     }
   .recipe{
     margin:3.125rem 100px;
@@ -131,13 +140,24 @@ margin:0.625rem;
     border-radius: 50%;
     color:#fff;
     }
-    .result{
-    margin:2.5rem 31.25rem;
-    text-align: center;
-    height:31.25rem;
-    background:#fff;
+    .results{
+    display:flex;
+    flex-wrap:wrap;
     }
-    
+    .result{
+  background: #fff;
+  position: relative;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 47%;
+  color: #333;
+  flex-basis: width;
+   text-align: center;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   }
+  
+  
     #recipe{
     margin:0.125rem 6.25rem;
     color:#262626;
@@ -146,19 +166,20 @@ margin:0.625rem;
     }
     .recipeform input{
     width:18.75rem;
-    margin:0.9375rem;
+    height:40px;
+    margin:60px 80px;
     border-bottom:2px solid #000000;
     
     }
     .recipeform{
-     margin:0 auto;
+     margin:20px 300px;
      text-align: center;
      height:31.25rem;
     }
   .recipeform button{
   background: #000000;
   color:#fff;
-  margin:0.9375rem;
+ 
   width:6.25rem;
   border:none;
   border-radius:1.875rem;
@@ -206,7 +227,7 @@ margin:0.625rem;
 .top-left {
   position: absolute;
   top: 9.375rem;
-  left:25rem;
+  left:3rem;
   color:#fff;
   }
 .red{
@@ -245,15 +266,19 @@ li {
     border-radius:1.5625rem;
     border: 2px solid #000000;
     width:25rem;
-    height:31.25rem;
+    height:31.20rem;
     background:#fff;
    }  
    .contactform h4{
      text-align: center;
    } 
+   .contactform label{
+     margin:3px 50px;
+   }
    .contactform input{
     margin:10px 3.125rem;
     width:18.75rem;
+    height:30px;
       
    }   
    .contactform button{
@@ -268,4 +293,4 @@ li {
     margin-top: 1.25rem;
    }      
         
-          
+ 

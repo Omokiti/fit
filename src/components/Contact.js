@@ -12,8 +12,11 @@ const Contact=()=>{
         <Col md={6}>
         <form className="contactform">
          <h4>Contact Us </h4>
-         <input type="text" placeholder="Fullname"/><br/>
+         <label>Fullname</label>
+         <input type="text" placeholder="Fullname"/>
+         <label>PhoneNumber</label>
          <input type="number" placeholder="PhoneNumber"/><br/>
+         <label>Email Address</label>
          <input type="email" placeholder="Email Address"/><br/>
          <br/>
          <textarea className='form-control' rows='5'placeholder="Message..."> </textarea>

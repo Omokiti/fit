@@ -1,11 +1,11 @@
-import React from 'react';
+import React,{Component} from 'react';
 import {Row} from 'react-bootstrap';
 import'./Home.css';
 
-class CheckBmi extends React.Component{
+class CheckBmi extends Component{
   constructor(props) {
     super(props);
-    this.state = { name: 'Friend', weight: 90, height: 180, bmi: 27, message: '', optimalweight: '', time: new Date().toLocaleTimeString() };
+    this.state = { name: '', weight:'' , height: '', bmi:'' , message: '', optimalweight: '', time: new Date().toLocaleTimeString() };
     this.submitMe = this.submitMe.bind(this);
     this.heightchange = this.heightchange.bind(this);
     this.weightchange = this.weightchange.bind(this);
@@ -79,14 +79,15 @@ class CheckBmi extends React.Component{
        <Row className="pt-3">
       
          <form onSubmit={this.submitMe} className="bmi">
-           <p id="bmiheading">BMI calculator</p>
-          
+           <p id="bmiheading">BMI calculator</p> <br/>
+          <label>Name</label>
            <input type="text" name="name" value={this.state.name} onBlur={this.blur} onChange={this.change}  placeholder="Enter your Name" />
-           <br/>
             
+           <br/>
+           <label>Height in cm</label>
            <input type="text" name="height" value={this.state.height} onBlur={this.blur} onChange={this.heightchange} placeholder="Enter your Height in cm"/>
             <br/>
-           
+            <label>Weight in kg</label> 
            <input type="text" name="weight" value={this.state.weight} onChange={this.weightchange} placeholder="Enter your weight in kg" />
            <label>{this.state.checked} Hello {this.state.name},  It's currently  {this.state.time} where you are living. Your BMI is {this.state.bmi} </label>
              <label>{this.state.message}</label>
