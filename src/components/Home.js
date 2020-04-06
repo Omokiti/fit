@@ -1,6 +1,7 @@
 import React, {Fragment}from 'react';
-import {Row,Col} from 'react-bootstrap';
-import recipe from './recipe.png';
+import {Row,Col,Button } from 'react-bootstrap';
+import history from './history';
+
 import'./Home.css';
 const Home=()=>{
   
@@ -9,66 +10,116 @@ const Home=()=>{
    <Fragment>
     <Row>
     <Col md={true}>
-      <div className="bg-img">
-      <img src="/gym-min.jpeg"alt="gym workout" />
-      <h2 className="top-left">Fitz..Fitness Platform</h2>
       
+      <div>
+      <img src="/Header.png"className="bg-img" alt="BMI"/>
+      <h1 className="top-left">The all in platform <br/>for your health</h1>
+      
+      <p className="top-lefts">Fitz fitness platform is all 
+       you need to start and <br/> maintain a healthy lifestyle we offer 
+       amazing <br/>feautures tailored to you.
+      </p>
+      <Button id="get-btns"onClick={()=>history.push('/checkbmi')}>Get Started</Button>
       </div>
     </Col>
     </Row>
    
-      <Row className="features">
-      <h2>Features</h2>
+      <Row className="mt-5">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+        <Col md={true}>
+      <h2>What We Offer</h2>
+      <p id="features">more than just another fitness platform</p>
+      </Col>
+      </Row>
+      <Row className='mt-5'>
     <Col md={4}>
-      <div class="card2">
-  <img src="/flutterkick.gif"className="exercise" alt="Gif-exercise"/>
-  <p id ="workout">Work out with Gif</p>
-  <div class="container">
-  
-    
+    <div class="card ml-3" style={{width: "300px",height:"300px"}}>
+  <img src="/vector.svg" class="card-img-top" alt="..." style={{width: "80px"}}className="exercise"/>
+  <div class="card-body ">
+    <h5 class="card-title">Gif Workouts</h5>
+    <span class="card-text">lack data but still interested  in working out?
+     We have got you covered with our new gif workouts,save data and stay fit.
+     </span>
   </div>
-</div>
-     
+  </div>
     </Col>
  
     <Col md={4}>
-    <div class="card">
-      <img src={recipe} className="recipe" alt="Recipes"/>
-    <p id="recipe">Get Recipes</p>
-    <div class="container">
-  
-    
+    <div class="card ml-3" style={{width: "300px",height:"300px"}}>
+  <img src="/vecto.svg" class="card-img-top" alt="..." style={{width: "80px"}}className="exercise"/>
+  <div class="card-body ">
+    <h5 class="card-title">Get Recipes</h5>
+    <span class="card-text">
+     Workout is just 20% of the goal,while 
+     healthy eating is 80%,<br/>get
+     new and easy recipes here.
+     </span>
   </div>
-</div>
+  </div>
     </Col>
     <Col md={4}>
-    <div class="card">
-      <img src="/bmi icon-min.png"className="check" alt="BMI"/>
-    <p id="check">Check BMI</p>
-    <div class="container">
-  
-    
+    <div class="card ml-3" style={{width: "300px",height:"300px"}}>
+  <img src="/vectors.svg" class="card-img-top" alt="..." style={{width: "80px"}}className="exercise"/>
+  <div class="card-body ">
+    <h5 class="card-title">Check Bmi</h5>
+    <span class="card-text">
+     Body mass index is the only <br/>
+     way to know your total fat percentage and what to do next.
+     </span>
   </div>
-</div>
+  </div>
       </Col>
       
      </Row>
-     <Row className="profiles">
+     <Row className='mt-5 infos'>
+       <Col md={true}>
+      <img src="/brooke.png"alt="brooke" id="bodyrules"/>
+
+      <h2 id="rules">Your Body Your Rules</h2>
+
+      <span id="rule">
+        We are all about conforming <br/>to  your own standards,we
+        jut provide the necessary tool that you need.<br/> 
+        This is more than working out or eating right,it is a healthy lifestyle,<br/>
+        chooing to live right and making the right decisions,but you are not alone<br/> because
+        we are here,every tep of the way.
+      </span>
+      <Button id="start">Start Now</Button>
+      
+       </Col>
+
+       
+     </Row>
+     <Row className='mt-5'>
+       <Col md={true}>
       <h2>Testimonials</h2>
+      <p id="features">see what other have to say about our product</p>
+      </Col>
+      </Row>
+     <Row className=" mt-4 profiles">
+    
     <Col md={4}>
-      <img src="/healthy-min.jpg" className="profile" alt="Girl"/>
+      <img src="/Ellipse 5.png" className="profile" alt="Farah Muhamed"/>
       <br/>
-    <p>Fitz is an amazing platform.</p>
+      <p className="pl-5">Farah Muhamed</p>
+    <p className="ml-5">I started using this last<br/>
+     year and I can confidently say<br/>
+     it's my best decision yet.
+     </p>
     </Col>
     <Col md={4}>
-      <img src="/men-min.jpg" className="profile" alt="men"/>
+      <img src="/Ellipse 6.png" className="profile" alt="Mark Johnson"/>
       <br/>
-    <p >I enjoy the gif-exercises.</p>
+      <p className="ml-5"> Mark Johnson</p>
+    <p className="ml-5" >What more can I say than <br/>
+      thank to those who made this.</p>
     </Col>
     <Col md={4}>
-      <img src="/mary-min.jpg"className="profile" alt="mary"/>
+      <img src="/Ellipse 7.png"className="profile" alt="mary"/>
       <br/>
-    <p>I love the fact that it is free!!!</p>
+      <p className="ml-5">Fegor Komaro</p>
+    <p className="ml-5">I met all my fitne goal by <br/>
+    using this platform alone
+    </p>
     </Col>
   
      </Row>

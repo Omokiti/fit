@@ -1,5 +1,5 @@
 import React from "react";
-import { Route,BrowserRouter as Router, Switch } from "react-router-dom";
+import { Route, Router, Switch } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import CheckCalorie from"./CheckBmi";
@@ -9,13 +9,14 @@ import Intermediate from"./Intermediate";
 import Advance from"./Advance";
 import Contact from "./Contact";
 import Error from "./Error";
+import history from './history';
 
 const Routing=()=> {
   return (
          <div>
           
         
-        <Router>
+        <Router history={history}>
         
             <Switch>
             

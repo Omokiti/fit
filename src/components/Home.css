@@ -1,4 +1,6 @@
-
+html{
+scroll-behavior: smooth;
+}
 * {
 box-sizing: border-box;
 }
@@ -7,13 +9,31 @@ width: 100%;
 height: auto;
 overflow-x: hidden;
 font-family: 'Open Sans', sans-serif;
-
+}
+.navbar{
+background:#000000;
 }
 
+.navbar-toggler div{
+  width: 2.1875rem;
+  height:0.3125rem;
+  background-color:#AF1214;
+  margin:0.1875rem 6.25rem;
+   }
+.nav-link{
+  color:#ffffff;
+}
+.nav-link:hover{
+  color:#AF1214;
+}
+.navbar-brand{
+  color:#fff;
+}
+
+
 .exercise{
-margin:3.125rem 6.25rem;
-width:5rem;
-color:#fff;
+margin:20px 100px;
+
 }
 .about{
 height:31.25rem;
@@ -29,14 +49,11 @@ margin:0.625rem;
   margin-top: 20px;
   }
   .bg-img{
-  background:no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-image: url("/gym-min.jpeg");
-  min-height:23.75rem;
+   width:100%;
+   min-height:23.75rem;
+   position: relative;
    }
+  
    .bcg-image{
   background:no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -56,10 +73,16 @@ margin:0.625rem;
     
   }
   .card {
-  box-shadow: 10px 10px 8px 10px #00000000;
+  box-shadow: 0px 20px  50px rgba(0,0,0,0.05);
   }
- 
-  
+ .card-title{
+  margin-left: 80px;
+  color:#222222;
+ }
+  .card-text{
+  color:#666666;
+  text-align: center;
+  }
   
   .card2 {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -84,9 +107,13 @@ margin:0.625rem;
     }
   h2{
   text-align:center;
-  font-weight:300;
-  color:#262626;
-  margin:1.25rem 37.5rem;
+  font-weight:600;
+  font-size:40px;
+  color:#000000;
+  }
+  #features{
+  text-align:center;
+  color:#000000;
   }
   hr{
   border-color:#e8eef8;
@@ -95,24 +122,46 @@ margin:0.625rem;
   color:#e8eef8;
   }
   .profile{
-  border-radius:50%;
+ 
   width:150px;
   height:150px;
-  margin-left: 20px;
-  
+  margin:50px 50px;
   }
+  #bodyrules{
+  position: relative;
+  width:100%;
+  height:400px;
+  }
+  #rules{
+  position: absolute;
+  left:200px;
+  top:50px;
+  left:750px;
+  color:#000000;
+  }
+  #rule{
+    position: absolute;
+    top:100px;
+    left:750px;
+    color:#666666;
+    }
+    #start{
+    position: absolute;
+    background: #ffffff;
+    border:1px solid #AF1214;
+    color:#AF1214;
+    top:250px;
+    left:750px;
+    width:200px;
+    height:50px;
+    }
   .check{
   margin:3.125rem 5rem;
   border-radius:50%;
   width:80px;
   position:relative;
   }
-  input[type='text']{
-  margin:0.625rem 3.125rem;
-  }
-  #collasible-nav-dropdown{
-    color:white;
-  }
+  
   .bmi{
     margin: 20px 500px;
     border-radius: 25px;
@@ -124,7 +173,7 @@ margin:0.625rem;
     .bmi input{
     width:16.5rem;
     height:40px;
-    margin-left: 2px 50px;
+    margin:0.625rem 3.125rem;
     border:2px solid #000000;
     }
     .bmi label{
@@ -177,12 +226,12 @@ margin:0.625rem;
      height:31.25rem;
     }
   .recipeform button{
-  background: #000000;
+  background: #AF1214;
   color:#fff;
- 
-  width:6.25rem;
+  width:8.25rem;
+  height:40px;
   border:none;
-  border-radius:1.875rem;
+  margin-left:5px;
   }
     #check{
     margin:1.25rem 6.25rem;
@@ -198,18 +247,23 @@ margin:0.625rem;
     left:1.875rem;
     }
   .footer{
-  background:#3B4045;
-  height:auto;
+  background:#02182B;
+  height:700px;
   color:#fff;
   
   }
   #btn{
-  background: #000000;
-  color:#fff;
+  background: #F3E1DD;
+  color:#AF1214;
   margin:1.5625rem 6.25rem;
   width:6.25rem;
   border:none;
-  border-radius:1.875rem;
+  width:300px;
+  height:50px;
+  }
+  #subscribe{
+  background: #F3E1DD;
+  width:200px;
   }
   #footer{
   margin-top:0.625rem;
@@ -227,9 +281,28 @@ margin:0.625rem;
 .top-left {
   position: absolute;
   top: 9.375rem;
-  left:3rem;
+  left:750px;
   color:#fff;
+  font-weight: bolder;
   }
+
+  .top-lefts {
+    position: absolute;
+    top: 15.375rem;
+    left:750px;
+    color:#fff;
+    font-weight: bolder;
+    }
+    #get-btns {
+      position: absolute;
+      width:190px;
+      height:50px;
+      border:none;
+      margin-top:30px;
+      left:750px;
+      top:20.375rem;
+      background:#AF1214;
+    }
 .red{
 border:2px solid black;
 margin-top:3.125rem;
@@ -253,13 +326,19 @@ li {
    }
   
   .profiles{
-    background-color:#828282;
-    height:380px;
+    background-color:#E5E5E5;
+    height:auto;
     color:#fff;
     }
   
    #contact{
    margin-right:1.5625rem;
+   }
+   .pl-5{
+    color:#222222;
+   }
+   .ml-5{
+   color:#666666;
    }
    .contactform{
     margin-top:1.25rem ;
@@ -291,6 +370,17 @@ li {
    }    
    iframe{
     margin-top: 1.25rem;
-   }      
+   }
+   .footerform{
+    margin:50px 80px;
+   } 
+   .add{
+    display:flex;
+
+   }
+   .addon{
+   flex:1;
+   }
+  
         
  

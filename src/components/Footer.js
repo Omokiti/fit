@@ -1,50 +1,60 @@
 import React from 'react';
-import {  Row, Col,Nav,NavDropdown } from 'react-bootstrap';
+import { Row, Col,  } from 'react-bootstrap';
 import './Home.css';
 const Footer = () => {
   return (
     <div>
 
       <Row className="footer">
-        
+        <Col md={6}>
+          <p className="ml-4 mt-3">Get in Touch</p>
+
+          <p className="ml-4"> We  would love to hear from you</p>
+
+          <form className="ml-4">
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Name</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email </label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" />
+            </div>
+
+
+            <div class="form-group">
+              <textarea placeholder="Type your mesage "class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" id="btn">Send</button>
+          </form>
+        </Col>
+        <Col md={6} classsName="pt-3">
+          <p className="ml-3 mt-3">Subscribe to Our Newsletter to get updates</p>
+          <p className="ml-3"> We  would love to hear from you</p>
           
-            <Col md={4}className="pl-4 pt-3">
-              <p><u> Main Menu</u></p>
-              <Nav.Link style= {{color:"white"}} href="/">Home</Nav.Link>
-      <Nav.Link style= {{color:"white"}} href="/about">About</Nav.Link>
-      <Nav.Link style= {{color:"white"}} href="/recipes">Recipes</Nav.Link>
-      <Nav.Link style= {{color:"white"}} href="/checkBmi">CheckBmi</Nav.Link>
-      <NavDropdown   className="mr-5"title="Gif-Exercise" style= {{color:"white"}} id="collasible-nav-dropdown">
-        <NavDropdown.Item   href="/beginner">Beginner</NavDropdown.Item>
-        <NavDropdown.Item   href="/intermediate">Intermediate</NavDropdown.Item>
-        <NavDropdown.Item  href="advance">Advance</NavDropdown.Item>
-         </NavDropdown>
-      <Nav.Link   style= {{color:"white"}} href="/contact" id="contact">Contact</Nav.Link>
-            </Col>
-            <Col md={4} classsName= "pt-3">
-           <p id="footer"><u>Get in Touch</u></p>
-          <p> We at Fitz would like to hear from you</p>
-          <form>
-            <input type="email"placeholder="enter your email"/>
-            <button id="btn">Send</button>
+          <form className="ml-3 mr-3">
+           
+            <div class="form-group ">
+            <label for="exampleFormControlInput1">Email address</label>
+            <div class="add">
+              <input type="email" class="form-control addon" id="exampleFormControlInput1" placeholder="Email" />
+              <button type="submit"id="subscribe">Subscribe</button>
+              </div>
+            </div>
+             
+         
+           
           </form>
 
-            </Col>
-            <Col md={4} className= "pt-3">
-            <p><u>Subscribe to Our Newsletter</u></p>
-            <p> We at Fitz would like to send you our amazing Newsletters</p>
-        <form>
-            <input type="email"placeholder="enter your email"/>
-            <button id="btn">Subscribe</button>
-          </form>
-            </Col>
-            <Col md={true}>
-            <hr />
-            <span>&copy; Fitz 2020 Copyright. All rights reserved.</span>
-            </Col>
-           
-          
-        
+        </Col>
+
+        <Col md={true}>
+          <hr />
+          <span>&copy; Fitz 2020 Copyright. All rights reserved.</span>
+        </Col>
+
+
+
 
       </Row>
 
