@@ -12,7 +12,7 @@ const Home=()=>{
     <Col md={true}>
       
       <div>
-      <img src="/Header.png"className="bg-img" alt="BMI"/>
+      <img src="/Header-min.png"className="bg-img" alt="BMI"/>
       <h1 className="top-left">The all in platform <br/>for your health</h1>
       
       <p className="top-lefts">Fitz fitness platform is all 
@@ -72,7 +72,7 @@ const Home=()=>{
      </Row>
      <Row className='mt-5 infos'>
        <Col md={true}>
-      <img src="/brooke.png"alt="brooke" id="bodyrules"/>
+      <img src="/brooke-min.png"alt="brooke" id="bodyrules"/>
 
       <h2 id="rules">Your Body Your Rules</h2>
 
@@ -98,7 +98,7 @@ const Home=()=>{
      <Row className=" mt-4 profiles">
     
     <Col md={4}>
-      <img src="/Ellipse 5.png" className="profile" alt="Farah Muhamed"/>
+      <img src="/Ellipse 5-min.png" className="profile" alt="Farah Muhamed"/>
       <br/>
       <p className="pl-5">Farah Muhamed</p>
     <p className="ml-5">I started using this last<br/>
@@ -107,14 +107,14 @@ const Home=()=>{
      </p>
     </Col>
     <Col md={4}>
-      <img src="/Ellipse 6.png" className="profile" alt="Mark Johnson"/>
+      <img src="/Ellipse 6-min.png" className="profile" alt="Mark Johnson"/>
       <br/>
       <p className="ml-5"> Mark Johnson</p>
     <p className="ml-5" >What more can I say than <br/>
       thank to those who made this.</p>
     </Col>
     <Col md={4}>
-      <img src="/Ellipse 7.png"className="profile" alt="mary"/>
+      <img src="/Ellipse 7-min.png"className="profile" alt="mary"/>
       <br/>
       <p className="ml-5">Fegor Komaro</p>
     <p className="ml-5">I met all my fitne goal by <br/>
