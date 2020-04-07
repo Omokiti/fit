@@ -12,7 +12,7 @@ const Home=()=>{
     <Col md={true}>
       
       <div>
-      <img src="/Header-min.png"className="bg-img" alt="BMI"/>
+      <img src="/Header-min.png"className="bg-img" alt="header"/>
       <h1 className="top-left">The all in one platform <br/>for your health</h1>
       
       <p className="top-lefts">Fitz fitness platform is all 
