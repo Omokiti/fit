@@ -13,7 +13,7 @@ const Home=()=>{
       
       <div>
       <img src="/Header-min.png"className="bg-img" alt="BMI"/>
-      <h1 className="top-left">The all in platform <br/>for your health</h1>
+      <h1 className="top-left">The all in one platform <br/>for your health</h1>
       
       <p className="top-lefts">Fitz fitness platform is all 
        you need to start and <br/> maintain a healthy lifestyle we offer 
@@ -32,8 +32,8 @@ const Home=()=>{
       </Row>
       <Row className='mt-5'>
     <Col md={4}>
-    <div class="card ml-3" style={{width: "300px",height:"300px"}}>
-  <img src="/vector.svg" class="card-img-top" alt="..." style={{width: "80px"}}className="exercise"/>
+    <div class="card ml-3" style={{width: "300px",height:"240px"}}>
+  <img src="/vector.svg" class="card-img-top" alt="gif-workout" style={{width: "50px"}}className="exercise"/>
   <div class="card-body ">
     <h5 class="card-title">Gif Workouts</h5>
     <span class="card-text">lack data but still interested  in working out?
@@ -44,25 +44,25 @@ const Home=()=>{
     </Col>
  
     <Col md={4}>
-    <div class="card ml-3" style={{width: "300px",height:"300px"}}>
-  <img src="/vecto.svg" class="card-img-top" alt="..." style={{width: "80px"}}className="exercise"/>
+    <div class="card ml-3" style={{width: "300px",height:"240px"}}>
+  <img src="/vecto.svg" class="card-img-top" alt=" recipes" style={{width: "50px"}}className="exercise"/>
   <div class="card-body ">
     <h5 class="card-title">Get Recipes</h5>
     <span class="card-text">
      Workout is just 20% of the goal,while 
-     healthy eating is 80%,<br/>get
+     healthy eating is 80%,get
      new and easy recipes here.
      </span>
   </div>
   </div>
     </Col>
     <Col md={4}>
-    <div class="card ml-3" style={{width: "300px",height:"300px"}}>
-  <img src="/vectors.svg" class="card-img-top" alt="..." style={{width: "80px"}}className="exercise"/>
+    <div class="card ml-3" style={{width: "300px",height:"240px"}}>
+  <img src="/vectors.svg" class="card-img-top" alt="bmi" style={{width: "50px"}}className="exercise"/>
   <div class="card-body ">
-    <h5 class="card-title">Check Bmi</h5>
-    <span class="card-text">
-     Body mass index is the only <br/>
+    <h5 class="card-title mt-4">Check Bmi</h5>
+    <span class="card-text mt-4 ">
+     Body mass index is the only 
      way to know your total fat percentage and what to do next.
      </span>
   </div>
@@ -83,7 +83,7 @@ const Home=()=>{
         chooing to live right and making the right decisions,but you are not alone<br/> because
         we are here,every tep of the way.
       </span>
-      <Button id="start">Start Now</Button>
+      <Button id="start"onClick={()=>history.push('/recipe')}>Start Now</Button>
       
        </Col>
 
@@ -100,7 +100,7 @@ const Home=()=>{
     <Col md={4}>
       <img src="/Ellipse 5-min.png" className="profile" alt="Farah Muhamed"/>
       <br/>
-      <p className="pl-5">Farah Muhamed</p>
+      <p className="ml-5">Farah Muhamed</p>
     <p className="ml-5">I started using this last<br/>
      year and I can confidently say<br/>
      it's my best decision yet.

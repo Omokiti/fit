@@ -15,10 +15,10 @@ background:#000000;
 }
 
 .navbar-toggler div{
-  width: 2.1875rem;
-  height:0.3125rem;
-  background-color:#AF1214;
-  margin:0.1875rem 6.25rem;
+  width: 35px;
+  height:5px;
+ background-color:#AF1214;
+margin:3px 0;
    }
 .nav-link{
   color:#ffffff;
@@ -74,14 +74,16 @@ margin:0.625rem;
   }
   .card {
   box-shadow: 0px 20px  50px rgba(0,0,0,0.05);
+  background:#ffffff ;
   }
  .card-title{
-  margin-left: 80px;
+   text-align:center;
   color:#222222;
  }
   .card-text{
   color:#666666;
   text-align: center;
+  font-size: 13px;
   }
   
   .card2 {
@@ -115,6 +117,11 @@ margin:0.625rem;
   text-align:center;
   color:#000000;
   }
+  @media(max-width:425px){
+  #features{
+    font-size:20px;
+  }
+  }
   hr{
   border-color:#e8eef8;
   }
@@ -125,7 +132,7 @@ margin:0.625rem;
  
   width:150px;
   height:150px;
-  margin:50px 50px;
+  margin:50px 150px;
   }
   #bodyrules{
   position: relative;
@@ -248,22 +255,28 @@ margin:0.625rem;
     }
   .footer{
   background:#02182B;
-  height:700px;
   color:#fff;
-  
+  }
+  #exampleFormControlInput1{
+  width:350px;
+  }
+  #exampleFormControlTextarea1{
+  width:350px;
+  height:200px;
   }
   #btn{
   background: #F3E1DD;
   color:#AF1214;
-  margin:1.5625rem 6.25rem;
+  margin:1.5625rem 0.3125rem;
   width:6.25rem;
   border:none;
-  width:300px;
+  width:200px;
   height:50px;
   }
   #subscribe{
   background: #F3E1DD;
   width:200px;
+  color:#AF1214;
   }
   #footer{
   margin-top:0.625rem;
@@ -285,7 +298,17 @@ margin:0.625rem;
   color:#fff;
   font-weight: bolder;
   }
-
+  @media (max-width:425px) {
+    .top-left {
+      position: absolute;
+      top: 9.375rem;
+      left:250px;
+      color:#fff;
+      font-weight: bolder;
+      font-size:0.9375em;
+    }
+  }
+   
   .top-lefts {
     position: absolute;
     top: 15.375rem;
@@ -293,6 +316,7 @@ margin:0.625rem;
     color:#fff;
     font-weight: bolder;
     }
+   
     #get-btns {
       position: absolute;
       width:190px;
@@ -302,6 +326,18 @@ margin:0.625rem;
       left:750px;
       top:20.375rem;
       background:#AF1214;
+    }
+    @media (max-width:425px) {
+      #get-btns {
+      position: absolute;
+      width:130px;
+      height:40px;
+      border:none;
+      margin-top:30px;
+      left:250px;
+      top:10.375rem;
+      background:#AF1214;
+      }
     }
 .red{
 border:2px solid black;
@@ -326,7 +362,7 @@ li {
    }
   
   .profiles{
-    background-color:#E5E5E5;
+    background-color:#ffffff;
     height:auto;
     color:#fff;
     }
@@ -336,9 +372,11 @@ li {
    }
    .pl-5{
     color:#222222;
+    text-align: center;
    }
    .ml-5{
    color:#666666;
+   text-align: center;
    }
    .contactform{
     margin-top:1.25rem ;
@@ -381,6 +419,4 @@ li {
    .addon{
    flex:1;
    }
-  
-        
- 
+   
