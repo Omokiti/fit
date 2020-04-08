@@ -26,7 +26,7 @@ const Home=()=>{
    
       <Row className="mt-5">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
         <Col md={true}>
-      <h2>What We Offer</h2>
+      <h2 id="offers">What We Offer</h2>
       <p id="features">more than just another fitness platform</p>
       </Col>
       </Row>

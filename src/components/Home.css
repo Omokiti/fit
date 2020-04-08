@@ -15,7 +15,7 @@ background:#000000;
 }
 
 .navbar-toggler div{
-  width: 35px;
+  width: 25px;
   height:5px;
  background-color:#AF1214;
 margin:3px 0;
@@ -29,7 +29,11 @@ margin:3px 0;
 .navbar-brand{
   color:#fff;
 }
-
+@media( max-width:425px){
+  #offers{
+  font-size:20px;
+  }
+}
 
 .exercise{
 margin:20px 100px;
@@ -50,7 +54,7 @@ margin:0.625rem;
   }
   .bg-img{
    width:100%;
-   min-height:23.75rem;
+   height:auto;
    position: relative;
    }
   
@@ -120,6 +124,7 @@ margin:0.625rem;
   @media(max-width:425px){
   #features{
     font-size:20px;
+    text-align:center;
   }
   }
   hr{
@@ -301,7 +306,7 @@ margin:0.625rem;
   @media (max-width:425px) {
     .top-left {
       position: absolute;
-      top: 9.375rem;
+      top: 8.375rem;
       left:250px;
       color:#fff;
       font-weight: bolder;
@@ -335,7 +340,7 @@ margin:0.625rem;
       border:none;
       margin-top:40px;
       left:250px;
-      top:10.375rem;
+      top:9.375rem;
       background:#AF1214;
       }
     }
@@ -399,12 +404,12 @@ li {
       
    }   
    .contactform button{
-    background: #000000;
+    background: #AF1214;
     color:#fff;
-    margin:1.5625rem 9.375rem;
+    margin:1.6625rem 9.375rem;
     width:6.25rem;
     border:none;
-    border-radius:1.875rem;
+    
    }    
    iframe{
     margin-top: 1.25rem;
