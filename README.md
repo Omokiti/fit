@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+A  fitness platform were users can check their bmi,get healthy recipes and get gif-workout images
+it was developed using react and hosted on netlify https://fitzapp.netlify.com/
+
 ## Available Scripts
 
 In the project directory, you can run:
